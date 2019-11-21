@@ -1,0 +1,391 @@
+{
+    "TmVhfEclairsAlert": {
+        "CcsdsApid": {
+            "type": "uint",
+            "size": "16",
+            "description": "Apid"
+        },
+        "CcsdsGFlag": {
+            "type": "uint",
+            "size": "2",
+            "description": "Sequence Flags of CCSDS Packet Header"
+        },
+        "CcsdsCounter": {
+            "type": "uint",
+            "size": "14",
+            "description": "Sequence counter of CCSDS TM packet header"
+        },
+        "CcsdsPLength": {
+            "type": "uint",
+            "size": "16",
+            "description": "Packet Length of CCSDS Packet Header"
+        },
+        "DPacketTimeS": {
+            "type": "uint",
+            "size": "32",
+            "description": "Time of telemetry packet -CUC seconds"
+        },
+        "VhfIObsType": {
+            "type": "uint",
+            "size": "8",
+            "description": "observation type"
+        },
+        "VhfNObsNumber": {
+            "type": "uint",
+            "size": "24",
+            "description": "observation number"
+        },
+        "AlertMsgCount": {
+            "type": "uint",
+            "size": "8",
+            "description": "message counter for current alert"
+        },
+        "AlertTimeTbAbsSeconds": {
+            "type": "uint",
+            "size": "32",
+            "description": "absolute time of beginning of burst - seconds part"
+        },
+        "AlertTimeTbAbsMicroseconds": {
+            "type": "uint",
+            "size": "24",
+            "description": "absolute time of beginning of burst - microseconds part"
+        },
+        "AlertTimeTb": {
+            "type": "uint",
+            "size": "32",
+            "description": "time of beginning of burst in UGTS local time"
+        },
+        "AlertSlewRequest": {
+            "type": "uint",
+            "size": "8",
+            "description": "slew request sent to platform to perform slew to source direction"
+        },
+        "AlertSkyTheta": {
+            "type": "uint",
+            "size": "24",
+            "description": "source localization in ECLAIRs reference frame - theta angle"
+        },
+        "AlertSkyPhi": {
+            "type": "uint",
+            "size": "24",
+            "description": "source localization in ECLAIRs reference frame - phi angle"
+        },
+        "AlertCatSrcNum": {
+            "type": "uint",
+            "size": "16",
+            "description": "source number in catalog (0=not in catalog)"
+        },
+        "AlertSkyIPix": {
+            "type": "uint",
+            "size": "8",
+            "description": "source pixel I coordinate in ECLAIRs reference frame"
+        },
+        "AlertSkyJPix": {
+            "type": "uint",
+            "size": "8",
+            "description": "source pixel J coordinate in ECLAIRs reference frame"
+        },
+        "AlertSkyIFit": {
+            "type": "uint",
+            "size": "16",
+            "description": "source localization I coordinate in ECLAIRs reference frame"
+        },
+        "AlertSkyJFit": {
+            "type": "uint",
+            "size": "16",
+            "description": "source localization J coordinate in ECLAIRs reference frame"
+        },
+        "AlertSkyCnt": {
+            "type": "real",
+            "size": "32",
+            "description": "counts at source position in sky"
+        },
+        "AlertSkyCntFit": {
+            "type": "real",
+            "size": "32",
+            "description": "fitted counts at source position in sky"
+        },
+        "AlertSkyVar": {
+            "type": "real",
+            "size": "32",
+            "description": "variance at source position in sky"
+        },
+        "AlertQuality": {
+            "type": "uint",
+            "size": "8",
+            "description": "detection quality indication"
+        },
+        "AlertTriggerCriterium": {
+            "type": "uint",
+            "size": "16",
+            "description": "code for detection zone (1 to 9)+energy band+ time scale + trigger type(TBC)"
+        },
+        "AlertDetCounts": {
+            "type": "uint",
+            "size": "24",
+            "description": "detection counts in energy band, zone, time scale"
+        },
+        "AlertDetBkg": {
+            "type": "uint",
+            "size": "24",
+            "description": "estimated detection background counts in energy band, zone, time scale"
+        },
+        "SatPositionX": {
+            "type": "real",
+            "size": "32",
+            "description": "satellite position X in J2000 as in PVT message"
+        },
+        "SatPositionY": {
+            "type": "real",
+            "size": "32",
+            "description": "satellite position Y in J2000 as in PVT message"
+        },
+        "SatPositionZ": {
+            "type": "real",
+            "size": "32",
+            "description": "satellite position Z in J2000 as in PVT message"
+        },
+        "SatAttitudeQ0": {
+            "type": "real",
+            "size": "32",
+            "description": " estimated satellite attitude quaternion as in AAV message Q0"
+        },
+        "SatAttitudeQ1": {
+            "type": "real",
+            "size": "32",
+            "description": " estimated satellite attitude quaternion as in AAV message Q1"
+        },
+        "SatAttitudeQ2": {
+            "type": "real",
+            "size": "32",
+            "description": " estimated satellite attitude quaternion as in AAV message Q2"
+        },
+        "SatAttitudeQ3": {
+            "type": "real",
+            "size": "32",
+            "description": " estimated satellite attitude quaternion as in AAV message Q3"
+        },
+        "SatAttQuality": {
+            "type": "uint",
+            "size": "8",
+            "description": "quality of pointing stability as in AAV message"
+        },
+        "Spare08": {
+            "type": "uint",
+            "size": "8",
+            "description": "Spare parameter 8 bit-long"
+        },
+        "ZVhfPEC": {
+            "type": "uint",
+            "size": "16",
+            "description": "VHF packet checksum"
+        }
+    }
+    "TmVhfEclairsLightCurve": {
+        "CcsdsApid": {
+            "type": "uint",
+            "size": "16",
+            "description": "First 2 bytes of telemetry packet determined by packet type and APID"
+        },
+        "CcsdsGFlag": {
+            "type": "uint",
+            "size": "2",
+            "description": "Sequence Flags of CCSDS Packet Header"
+        },
+        "CcsdsCounter": {
+            "type": "uint",
+            "size": "14",
+            "description": "Sequence counter of CCSDS TM packet header"
+        },
+        "CcsdsPLength": {
+            "type": "uint",
+            "size": "16",
+            "description": "Packet Length of CCSDS Packet Header"
+        },
+        "DPacketTimeS": {
+            "type": "uint",
+            "size": "32",
+            "description": "Time of telemetry packet -CUC seconds"
+        },
+        "VhfIObsType": {
+            "type": "uint",
+            "size": "8",
+            "description": "observation type"
+        },
+        "VhfNObsNumber": {
+            "type": "uint",
+            "size": "24",
+            "description": "observation number"
+        },
+        "AlertTimeTb0AbsSeconds": {
+            "type": "uint",
+            "size": "32",
+            "description": "absolute time of beginning of burst - seconds part"
+        },
+        "AlertTimeTb0AbsMilliseconds": {
+            "type": "uint",
+            "size": "8",
+            "description": "absolute time of beginning of burst - milliseconds part"
+        },
+        "LightCurvePacketNumber": {
+            "type": "uint",
+            "size": "8",
+            "description": "packet number in light curve sequence"
+        },
+        "SatAttitudeLCQ0": {
+            "type": "int",
+            "size": "16",
+            "description": " estimated satellite attitude quaternion for light curve Q0"
+        },
+        "SatAttitudeLCQ1": {
+            "type": "int",
+            "size": "16",
+            "description": " estimated satellite attitude quaternion for light curve Q1"
+        },
+        "SatAttitudeLCQ2": {
+            "type": "int",
+            "size": "16",
+            "description": " estimated satellite attitude quaternion for light curve Q2"
+        },
+        "SatAttitudeLCQ3": {
+            "type": "int",
+            "size": "16",
+            "description": " estimated satellite attitude quaternion for light curve Q3"
+        },
+        "SatPositionLon": {
+            "type": "int",
+            "size": "16",
+            "description": "satellite longitude for light curve"
+        },
+        "SatPositionLat": {
+            "type": "int",
+            "size": "16",
+            "description": "satellite latitude for light curve"
+        },
+        "Sample0Eband0IntCount": {
+            "type": "uint",
+            "size": "32",
+            "description": "Integral counter value since last packet (first one=0)"
+        },
+        "Sample0Eband1IntCount": {
+            "type": "uint",
+            "size": "32",
+            "description": "Integral counter value since last packet (first one=0)"
+        },
+        "Sample0Eband2IntCount": {
+            "type": "uint",
+            "size": "32",
+            "description": "Integral counter value since last packet (first one=0)"
+        },
+        "Sample0Eband3IntCount": {
+            "type": "uint",
+            "size": "32",
+            "description": "Integral counter value since last packet (first one=0)"
+        },
+        "Sample0EsatIntCount": {
+            "type": "uint",
+            "size": "32",
+            "description": "Integral counter value since last packet (first one=0)"
+        },
+        "Sample0MultipleIntCount": {
+            "type": "uint",
+            "size": "32",
+            "description": "Integral counter value since last packet (first one=0)"
+        },
+        "Sample1Eband0DiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample0"
+        },
+        "Sample1Eband1DiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample0"
+        },
+        "Sample1Eband2DiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample0"
+        },
+        "Sample1Eband3DiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample0"
+        },
+        "Sample1EsatDiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample0"
+        },
+        "Sample1MultipleDiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample0"
+        },
+        "Sample2Eband0DiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample1"
+        },
+        "Sample2Eband1DiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample1"
+        },
+        "Sample2Eband2DiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample1"
+        },
+        "Sample2Eband3DiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample1"
+        },
+        "Sample2EsatDiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample1"
+        },
+        "Sample2MultipleDiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample1"
+        },
+        "Sample3Eband0DiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample2"
+        },
+        "Sample3Eband1DiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample2"
+        },
+        "Sample3Eband2DiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample2"
+        },
+        "Sample3Eband3DiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample2"
+        },
+        "Sample3EsatDiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample2"
+        },
+        "Sample3MultipleDiffCount": {
+            "type": "uint",
+            "size": "16",
+            "description": "Differential counter value since time of Sample2"
+        },
+        "ZVhfPEC": {
+            "type": "uint",
+            "size": "16",
+            "description": "VHF packet checksum"
+        }
+    }
+}
