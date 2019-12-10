@@ -5,8 +5,9 @@
 
 class Packet
 {
-public:
-    void decode(std::string &s);
+    public:
+        uint16_t CcsdsApid;
+        void decode(std::string &s);
 };
 
 #endif /* INC_PACKET */

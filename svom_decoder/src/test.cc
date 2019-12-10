@@ -14,12 +14,12 @@ int main()
         // Decode alert
         Packet packet1;
         packet1.decode(alert);
-        cout<<"--\nFirst packet - APID: "<<packet1.ccsdsApid<<endl;
+        cout<<"--\nFirst packet - APID: "<<packet1.CcsdsApid<<endl;
 
         // Decode lcurve
         Packet packet2;
         packet2.decode(lcurve);
-        cout<<"--\nSecond packet - APID: "<<packet2.ccsdsApid<<endl;
+        cout<<"--\nSecond packet - APID: "<<packet2.CcsdsApid<<endl;
 
     return 0;
 }
