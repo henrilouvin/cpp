@@ -6,7 +6,7 @@
 class Packet
 {
     public:
-        uint16_t CcsdsApid;
+        uint16_t ccsdsApid;
         void decode(std::string &s);
 };
 
